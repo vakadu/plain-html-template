@@ -17,7 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 
     <!--Custom CSS-->
+    <!-- build:css assets/styles/styles.css -->
     <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+    <!-- endbuild -->
 </head>
 
 <body>

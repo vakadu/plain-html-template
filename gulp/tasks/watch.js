@@ -9,7 +9,7 @@ gulp.task('watch', function () {
         }
     });
 
-    watch('./app/index.html', function () {
+    watch('./app/index.php', function () {
         browserSync.reload();
     });
 
