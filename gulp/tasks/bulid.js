@@ -30,8 +30,8 @@ gulp.task('optimizeImages',['deleteDistFolder'], function () {
         .pipe(gulp.dest("./dist/assets/images"));
 });
 
-gulp.task('usemin', ['deleteDistFolder', 'styles'], function () {
-    return gulp.src('./app/index.php')
+gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'], function () {
+    return gulp.src('./app/index.html')
         .pipe(usemin({
             css: [function () {
                 return rev()
