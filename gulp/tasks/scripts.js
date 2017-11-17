@@ -1,3 +1,4 @@
+//scripts task is used for converting es6 to es5
 var gulp = require('gulp'),
     webpack = require('webpack');
 

@@ -1,0 +1,80 @@
+/* ==========================
+*   FORM ELEMENTS
+============================*/
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=date],
+input[type=search],
+select,
+textarea{
+    height: 44px;
+    border: 1px solid $light-grey;
+    background-color: $white;
+    width: 100%;
+    font-size: 13px;
+    padding: 0 16px;
+    float: left;
+    box-shadow: none;
+    border-radius: 3px 0 0 3px;
+    transition: all 0.3s ease-in-out;
+
+    @mixin atSmall{
+        width: 500px;
+        height: 54px;
+    }
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=search]:focus,
+textarea:focus{
+    border-color: $dark-blue;
+    background-color: $white;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.input--orange:focus{
+    border-color: $orange !important;
+}
+
+.form__search{
+    margin-bottom: 60px;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+
+    @mixin atSmall{
+        margin-top: 50px;
+    }
+}
+
+/* Change Color of Placeholders */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: $light-grey;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: $light-grey;
+    opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: $light-grey;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: $light-grey;
+}

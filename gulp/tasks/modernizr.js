@@ -1,3 +1,4 @@
+//modernizr task is used for supporting old browsers
 var gulp      = require('gulp'),
     modernizr = require('gulp-modernizr');
 

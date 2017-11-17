@@ -1,3 +1,4 @@
+//build task is used for compressing images, css files, js files
 var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     del = require('del'),

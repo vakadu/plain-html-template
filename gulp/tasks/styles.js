@@ -1,3 +1,4 @@
+//styles task is used for creating variables in css, nested css, media-queries for mobile and importing from other css files
 var gulp         = require('gulp'),
     postcss      = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
