@@ -14440,6 +14440,10 @@ hr{
     letter-spacing: 0.1em;
 }
 
+.white-text{
+    color: #FFFFFF;
+}
+
 .light-grey{
     color: #979797;
 }
@@ -14842,6 +14846,81 @@ textarea::-moz-placeholder {
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
     color: #979797;
+}
+
+.kwiqpick--controls{
+    padding-left: 30px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.kwiqpick--controls-input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.kwiqpick--controls-input:checked~.kwiqpick--controls-indicator{
+    color: #FFFFFF;
+    background-color: #CB212C;
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.kwiqpick--checkbox .kwiqpick--controls-indicator{
+    border-radius: 100%;
+}
+
+.kwiqpick--controls-indicator{
+    padding: 10px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 0 1px 3px rgba(93, 92, 99, 0.05);
+            box-shadow: 0 0 1px 3px rgba(93, 92, 99, 0.05);
+    border: 1px solid rgba(116, 135, 150, 0.23);
+    position: absolute;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.kwiqpick--controls-input:focus~.kwiqpick--controls-indicator {
+    -webkit-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #CB212C;
+            box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #CB212C;
+}
+
+.kwiqpick--controls-input:active~.kwiqpick--controls-indicator {
+    color: #FFFFFF;
+    background-color: #CB212C;
+}
+
+.kwiqpick--controls-input:disabled~.kwiqpick--controls-indicator {
+    cursor: not-allowed;
+    background-color: #eee
+}
+
+.kwiqpick--checkbox .kwiqpick--controls-input:checked~.kwiqpick--controls-indicator{
+    background-image: url("/assets/images/tick.png");
+}
+
+.kwiqpick--controls-input:disabled~.kwiqpick--controls-desc {
+    color: #767676;
+}
+
+.kwiqpick--controls-desc{
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .btn{
@@ -15291,4 +15370,85 @@ textarea:-ms-input-placeholder {
 .footer__address p{
             margin-bottom: 35px
     }
+    }
+
+/* ==========================
+*   RESTAURANTS
+============================*/
+
+.restaurants--bg-image{
+    background: url("/assets/images/restaurants.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.restaurants{
+    margin-top: 30px;
+    border-top: 1px solid #eaebeb;
+}
+
+/*color: $white;*/
+
+.restaurants__sidebar{
+        border: 1px solid #eaebeb;
+        background: #fafaf8;
+        border-radius: 3px;
+    }
+
+.restaurants__sidebar-title{
+        padding: 15px 15px 15px;
+        background: #CB212C;
+        float: left;
+        width: 100%;
+    }
+
+.restaurants__sidebar-title h6{
+            float: left;
+            margin-bottom: 0;
+            margin-top: 0;
+            color: #FFFFFF;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+.restaurants__sidebar-title i{
+            float: right;
+            color: #FFFFFF;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+.restaurants__main-block ul{
+            float: left;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+.restaurants__main-block ul li{
+                line-height: 28px;
+                font-weight: 300;
+                display: block;
+                padding: 15px;
+                border-bottom: 1px solid #eaebeb;
+            }
+
+.restaurants__main-block ul li:hover{
+                    background: #FFFFFF;
+                }
+
+.restaurants__main-block ul:hover li:last-child{
+         border-bottom: 1px solid transparent;
+         border-bottom: 1px solid #eaebeb;
+    }
+
+.restaurants__main-block ul li:first-of-type{
+         border-top: none
     }

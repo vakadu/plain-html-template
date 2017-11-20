@@ -106,6 +106,10 @@ hr{
     letter-spacing: 0.1em;
 }
 
+.white-text{
+    color: $white;
+}
+
 .light-grey{
     color: $light-grey;
 }

@@ -1,0 +1,80 @@
+/* ==========================
+*   RESTAURANTS
+============================*/
+.restaurants--bg-image{
+    background: url("/assets/images/restaurants.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.restaurants{
+    margin-top: 30px;
+    border-top: 1px solid $grey;
+    /*color: $white;*/
+
+    &__sidebar{
+        border: 1px solid $grey;
+        background: $light-white;
+        border-radius: 3px;
+    }
+
+    &__sidebar-title{
+        padding: 15px 15px 15px;
+        background: $orange;
+        float: left;
+        width: 100%;
+
+        h6{
+            float: left;
+            margin-bottom: 0;
+            margin-top: 0;
+            color: $white;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        i{
+            float: right;
+            color: $white;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+    }
+
+    &__main-block{
+        ul{
+            float: left;
+            width: 100%;
+            margin-bottom: 0;
+
+            li{
+                line-height: 28px;
+                font-weight: 300;
+                display: block;
+                padding: 15px;
+                border-bottom: 1px solid $grey;
+
+                &:hover{
+                    background: $white;
+                }
+            }
+        }
+    }
+
+    &__main-block ul:hover li:last-child{
+         border-bottom: 1px solid transparent;
+         border-bottom: 1px solid $grey;
+    }
+
+    &__main-block ul li:first-of-type{
+         border-top: none
+    }
+}
