@@ -17,7 +17,10 @@ Version:      3.0.0
     - Typography
     - Spacings
     - Overlay
+    - Social Icons
 # Home
+# Download Kwiqpick
+# Footer
 
 --------------------------------------------------------------*/
 
@@ -30,4 +33,8 @@ Version:      3.0.0
 @import "modules/_form.css";
 @import "modules/_btn.css";
 @import "modules/_overlay.css";
+@import "modules/_social.css";
 @import "modules/_home.css";
+@import "modules/_download.css";
+@import "modules/_playstorebtn.css";
+@import "modules/_footer.css";
