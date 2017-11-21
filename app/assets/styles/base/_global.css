@@ -114,6 +114,14 @@ hr{
     color: $light-grey;
 }
 
+.bg-grey{
+    background: #FCFCFA;
+}
+
+.bg-white{
+    background: $white;
+}
+
 /* ==========================
 *   SPACINGS
 ============================*/

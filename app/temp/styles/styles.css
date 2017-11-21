@@ -14448,6 +14448,14 @@ hr{
     color: #979797;
 }
 
+.bg-grey{
+    background: #FCFCFA;
+}
+
+.bg-white{
+    background: #FFFFFF;
+}
+
 /* ==========================
 *   SPACINGS
 ============================*/
@@ -15319,7 +15327,8 @@ textarea:-ms-input-placeholder {
 ============================*/
 
 .footer {
-    background: url("/assets/images/footer-bg.png") center repeat;
+
+
     padding: 60px 0;
     z-index: 1;
     position: relative;
@@ -15330,6 +15339,10 @@ textarea:-ms-input-placeholder {
 .footer {
         padding: 90px 0
 }
+    }
+
+.footer.lazyloaded{
+         background: url("/assets/images/footer-bg.png") center repeat;
     }
 
 .footer h5{
@@ -15414,9 +15427,10 @@ textarea:-ms-input-placeholder {
 ============================*/
 
 .restaurants--bg-image{
-    background: url("/assets/images/restaurants.png");
-    background-attachment: fixed;
-    background-position: center;
+    background: url("http://placehold.it/1670x480");
+    /*background: url("/assets/images/restaurants.png");*/
+    /*background-attachment: fixed;*/
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }

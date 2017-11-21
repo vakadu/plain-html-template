@@ -2,13 +2,18 @@
 *   FOOTER
 ============================*/
 .footer {
-    background: url("/assets/images/footer-bg.png") center repeat;
+
+
     padding: 60px 0;
     z-index: 1;
     position: relative;
 
     @mixin atSmall{
         padding: 90px 0;
+    }
+
+    &.lazyloaded{
+         background: url("/assets/images/footer-bg.png") center repeat;
     }
 
     h5{
