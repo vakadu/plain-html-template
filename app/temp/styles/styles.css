@@ -14520,6 +14520,10 @@ hr{
     margin-top: 140px;
 }
 
+.mr-5{
+    margin-right: 5px;
+}
+
 .mb-0{
     margin-bottom: 0 !important;
 }
@@ -14919,7 +14923,8 @@ textarea:-ms-input-placeholder {
 }
 
 .kwiqpick--controls-desc{
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 28px;
     font-weight: 300;
 }
 
@@ -14936,6 +14941,11 @@ textarea:-ms-input-placeholder {
     font-weight: bold;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+
+    /*&--blue{*/
+         /*background-color: $dark-blue;*/
+         /*border-color: $dark-blue;*/
+    /*}*/
 }
 
 .btn--radius-rest{
@@ -14959,6 +14969,33 @@ textarea:-ms-input-placeholder {
             height: 54px
     }
     }
+
+.btn--small{
+        width: 100px;
+        height: 40px;
+        line-height: 8px;
+    }
+
+.btn--flat-line{
+        border-radius: 0;
+        -webkit-transition: all 0.8s ease 0s;
+        transition: all 0.8s ease 0s;
+        font-weight: 500;
+        font-size: 12px;
+        border-width: 2px;
+        border-color: #CB212C;
+        letter-spacing: 1px;
+        padding: 13px;
+        background-color: transparent;
+        color: #414551;
+    }
+
+.btn--flat-line:hover,
+        .btn--flat-line:focus{
+            background-color: #CB212C;
+            border-color: #CB212C;
+            color: #FFFFFF;
+        }
 
 .btn--m-3{
         margin-left: -3px;
@@ -15270,7 +15307,7 @@ textarea:-ms-input-placeholder {
     .playstore-btn .store-btn:focus,
     .playstore-btn .store-btn:active{
         color: #FFFFFF;
-        background: #25282b;
+        background: #414551;
     }
 
 .playstore{
@@ -15433,10 +15470,10 @@ textarea:-ms-input-placeholder {
         }
 
 .restaurants__main-block ul li{
-                line-height: 28px;
+                line-height: 25px;
                 font-weight: 300;
                 display: block;
-                padding: 15px;
+                padding: 10px;
                 border-bottom: 1px solid #eaebeb;
             }
 
@@ -15452,3 +15489,94 @@ textarea:-ms-input-placeholder {
 .restaurants__main-block ul li:first-of-type{
          border-top: none
     }
+
+.restaurants__open-point{
+        border: 1px solid #eaebeb;
+        border-radius: 2px;
+        margin-bottom: 20px;
+    }
+
+.restaurants__open-point__logo{
+        float: none;
+        width: 110px;
+        height: auto;
+        border: 1px solid #eaebeb;
+        border-radius: 2px;
+        margin: 10px auto;
+        overflow: hidden;
+    }
+
+@media (min-width: 530px) {
+
+.restaurants__open-point__logo{
+            float: left;
+            margin-top: 15px;
+            margin-left: 15px
+    }
+    }
+
+.restaurants__open-point__logo img{
+            max-width: 100%;
+            display: block;
+        }
+
+.restaurants__open-point__desc{
+        padding: 0 15px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+@media (min-width: 530px) {
+
+.restaurants__open-point__desc{
+            text-align: left;
+            padding-left: 145px
+    }
+    }
+
+.restaurants__open-point__desc span{
+            color: #979797;
+            font-size: 13px;
+        }
+
+.restaurants__open-point__desc h5 a{
+            color: #414551;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+.restaurants__open-point__desc ul li{
+            font-size: 12px;
+            margin-top: 10px;
+            color: #979797;
+        }
+
+.restaurants__content-right__review{
+        padding: 15px 10px;
+        margin-top: 15px;
+        text-align: center;
+        border-left: transparent;
+        border-top: 1px solid #eaebeb;
+        min-height: 143px;
+    }
+
+@media (min-width: 530px) {
+
+.restaurants__content-right__review{
+            border-left: 1px solid #eaebeb;
+            border-top: transparent;
+            margin-top: 0
+    }
+    }
+
+.restaurants__content-right__review-block{
+        color: #CB212C;
+        background: transparent;
+        border: none;
+        /*text-align: center;*/
+        padding: 5px 15px 5px;
+    }
+
+.restaurants__content-right__review-block i{
+            font-size: 16px;
+        }

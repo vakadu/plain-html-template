@@ -185,6 +185,10 @@ hr{
     margin-top: 140px;
 }
 
+.mr-5{
+    margin-right: 5px;
+}
+
 .mb-0{
     margin-bottom: 0 !important;
 }

@@ -56,10 +56,10 @@
             margin-bottom: 0;
 
             li{
-                line-height: 28px;
+                line-height: 25px;
                 font-weight: 300;
                 display: block;
-                padding: 15px;
+                padding: 10px;
                 border-bottom: 1px solid $grey;
 
                 &:hover{
@@ -76,5 +76,87 @@
 
     &__main-block ul li:first-of-type{
          border-top: none
+    }
+
+    &__open-point{
+        border: 1px solid $grey;
+        border-radius: 2px;
+        margin-bottom: 20px;
+    }
+
+    &__open-point__logo{
+        float: none;
+        width: 110px;
+        height: auto;
+        border: 1px solid $grey;
+        border-radius: 2px;
+        margin: 10px auto;
+        overflow: hidden;
+
+        @mixin atSmall{
+            float: left;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        img{
+            max-width: 100%;
+            display: block;
+        }
+    }
+
+    &__open-point__desc{
+        padding: 0 15px;
+        text-align: center;
+        margin-top: 15px;
+
+        @mixin atSmall{
+            text-align: left;
+            padding-left: 145px;
+        }
+
+        span{
+            color: $light-grey;
+            font-size: 13px;
+        }
+
+        h5 a{
+            color: $black;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        ul li{
+            font-size: 12px;
+            margin-top: 10px;
+            color: $light-grey;
+        }
+    }
+
+    &__content-right__review{
+        padding: 15px 10px;
+        margin-top: 15px;
+        text-align: center;
+        border-left: transparent;
+        border-top: 1px solid $grey;
+        min-height: 143px;
+
+        @mixin atSmall{
+            border-left: 1px solid $grey;
+            border-top: transparent;
+            margin-top: 0;
+        }
+    }
+
+    &__content-right__review-block{
+        color: $orange;
+        background: transparent;
+        border: none;
+        /*text-align: center;*/
+        padding: 5px 15px 5px;
+
+        i{
+            font-size: 16px;
+        }
     }
 }
