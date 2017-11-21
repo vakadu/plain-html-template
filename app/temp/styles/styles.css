@@ -15096,6 +15096,15 @@ textarea:-ms-input-placeholder {
         }
 
 /* ==========================
+*   HERO IMAGE
+============================*/
+
+.hero-image{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* ==========================
 *   HOME
 ============================*/
 
@@ -15435,11 +15444,6 @@ textarea:-ms-input-placeholder {
     background-size: cover;
 }
 
-.hero-image{
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
 .restaurants{
     margin-top: 30px;
     border-top: 1px solid #eaebeb;
@@ -15594,3 +15598,7 @@ textarea:-ms-input-placeholder {
 .restaurants__content-right__review-block i{
             font-size: 16px;
         }
+
+/* ==========================
+*   MENU
+============================*/

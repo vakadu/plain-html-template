@@ -34,8 +34,10 @@ Version:      3.0.0
 @import "modules/_btn.css";
 @import "modules/_overlay.css";
 @import "modules/_social.css";
+@import "modules/_hero-bg.css";
 @import "modules/_home.css";
 @import "modules/_download.css";
 @import "modules/_playstorebtn.css";
 @import "modules/_footer.css";
 @import "modules/_restaurants.css";
+@import "modules/_menu.css";

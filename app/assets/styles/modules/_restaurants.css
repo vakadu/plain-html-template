@@ -10,11 +10,6 @@
     background-size: cover;
 }
 
-.hero-image{
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
 .restaurants{
     margin-top: 30px;
     border-top: 1px solid $grey;
