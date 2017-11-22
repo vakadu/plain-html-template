@@ -60,30 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _jquery = __webpack_require__(1);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _wowjs = __webpack_require__(2);
-
-var _wowjs2 = _interopRequireDefault(_wowjs);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-new _wowjs2.default.WOW().init();
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10341,6 +10322,25 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _wowjs = __webpack_require__(2);
+
+var _wowjs2 = _interopRequireDefault(_wowjs);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+new _wowjs2.default.WOW().init();
 
 /***/ }),
 /* 2 */

@@ -14978,6 +14978,26 @@ textarea:-ms-input-placeholder {
     }
     }
 
+.btn--medium{
+        width: 100px;
+        height: 30px;
+        font-size: 8px !important;
+        line-height: 18px;
+        margin-top: 0;
+        border-radius: 2px;
+    }
+
+@media (min-width: 530px) {
+
+.btn--medium{
+            width: 150px;
+            height: 40px;
+            font-size: 13px !important;
+            line-height: 25px;
+            margin-top: 20px !important
+    }
+    }
+
 .btn--small{
         width: 100px;
         height: 40px;
@@ -14988,6 +15008,11 @@ textarea:-ms-input-placeholder {
         padding: 2px 10px;
         font-size: 12px;
         vertical-align: text-bottom;
+    }
+
+.btn--link{
+        padding: 0 24px;
+        border: none;
     }
 
 .btn--flat-line{
@@ -15449,6 +15474,63 @@ textarea:-ms-input-placeholder {
     }
     }
 
+.sidebar{
+    border: 1px solid #eaebeb;
+    background: #fafaf8;
+    border-radius: 3px;
+}
+
+.sidebar-title {
+         padding: 15px 15px 15px;
+         background: #CB212C;
+         float: left;
+         width: 100%;
+    }
+
+.sidebar-title h6{
+             float: left;
+             margin-bottom: 0;
+             margin-top: 0;
+             color: #FFFFFF;
+             font-size: 1.4rem;
+             font-weight: 600;
+             line-height: 20px;
+         }
+
+.sidebar-title i{
+             float: right;
+             color: #FFFFFF;
+             font-size: 13px;
+             margin-top: 5px;
+         }
+
+.sidebar__main-block ul{
+            float: left;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+.sidebar__main-block ul li{
+                line-height: 25px;
+                font-weight: 300;
+                display: block;
+                padding: 10px;
+                border-bottom: 1px solid #eaebeb;
+            }
+
+.sidebar__main-block ul li:hover{
+                     background: #FFFFFF;
+                }
+
+.sidebar__main-block ul:hover li:last-child{
+         border-bottom: 1px solid transparent;
+         border-bottom: 1px solid #eaebeb;
+    }
+
+.sidebar__main-block ul li:first-of-type{
+         border-top: none
+    }
+
 /* ==========================
 *   RESTAURANTS
 ============================*/
@@ -15468,63 +15550,6 @@ textarea:-ms-input-placeholder {
 }
 
 /*color: $white;*/
-
-.restaurants__sidebar{
-        border: 1px solid #eaebeb;
-        background: #fafaf8;
-        border-radius: 3px;
-    }
-
-.restaurants__sidebar-title{
-        padding: 15px 15px 15px;
-        background: #CB212C;
-        float: left;
-        width: 100%;
-    }
-
-.restaurants__sidebar-title h6{
-            float: left;
-            margin-bottom: 0;
-            margin-top: 0;
-            color: #FFFFFF;
-            font-size: 1.4rem;
-            font-weight: 600;
-            line-height: 20px;
-        }
-
-.restaurants__sidebar-title i{
-            float: right;
-            color: #FFFFFF;
-            font-size: 13px;
-            margin-top: 5px;
-        }
-
-.restaurants__main-block ul{
-            float: left;
-            width: 100%;
-            margin-bottom: 0;
-        }
-
-.restaurants__main-block ul li{
-                line-height: 25px;
-                font-weight: 300;
-                display: block;
-                padding: 10px;
-                border-bottom: 1px solid #eaebeb;
-            }
-
-.restaurants__main-block ul li:hover{
-                    background: #FFFFFF;
-                }
-
-.restaurants__main-block ul:hover li:last-child{
-         border-bottom: 1px solid transparent;
-         border-bottom: 1px solid #eaebeb;
-    }
-
-.restaurants__main-block ul li:first-of-type{
-         border-top: none
-    }
 
 .restaurants__open-point{
         border: 1px solid #eaebeb;
@@ -15698,20 +15723,117 @@ textarea:-ms-input-placeholder {
 .profile__restaurant-desc p{
             color: #FFFFFF;
             font-size: 13px;
-            margin-bottom: 0;
+            margin-bottom: 5px;
         }
 
 .profile__restaurant .nav-inline .nav-item{
         display: inline-block;
-    }
-
-.profile__restaurant .nav-item a{
-        color: #FFFFFF;
         font-size: 13px;
-        padding-left: 0;
+        margin-right: 30px;
     }
 
-.profile__restaurant .nav-item.ratings a span i{
+.profile__restaurant .nav-item.ratings span i{
         color: #CB212C;
         font-size: 13px;
     }
+
+.restaurant-menu{
+    border: 1px solid #eaebeb;
+    background: #fafaf8;
+    border-radius: 2px;
+    position: relative;
+}
+
+.restaurant-menu__heading{
+        padding: 15px;
+        color: #FFFFFF;
+        border-radius: 3px;
+    }
+
+.restaurant-menu__title{
+        font-size: 16px;
+        font-weight: 500;
+        float: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+.restaurant-menu__title a i{
+            font-size: 13px;
+            color: #414551;
+        }
+
+.restaurant-menu__item{
+        padding: 15px;
+        border-bottom: 1px solid #eaebeb;
+    }
+
+.restaurant-menu__item:first-of-type{
+             border-top: 1px solid #eaebeb;
+        }
+
+.restaurant-menu__item:last-of-type{
+             border-bottom: transparent;
+        }
+
+.restaurant-menu__non-veg{
+        max-width: 20px;
+        height: auto;
+        margin-left: 2px;
+        display: block;
+    }
+
+.restaurant-menu__non-veg img{
+            max-width: 100%;
+            display: block;
+        }
+
+.restaurant-menu__logo{
+         max-width: 100px;
+         height: auto;
+         display: block;
+    }
+
+.restaurant-menu__logo img{
+             max-width: 100%;
+             display: block;
+         }
+
+.restaurant-menu__desc{
+        padding-left: 130px;
+        padding-top: 0;
+    }
+
+.restaurant-menu__desc h6 a{
+            color: #414551;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+.restaurant-menu__desc p{
+            font-size: 13px;
+        }
+
+.restaurant-menu__price{
+        font-size: 16px;
+        font-weight: 500;
+        color: #414551;
+        position: relative;
+        margin-top: 5px;
+    }
+
+@media (min-width: 530px) {
+
+.restaurant-menu__price{
+            margin-top: 20px
+    }
+    }
+
+a[aria-expanded=true] .fa-angle-up {
+    display: none;
+}
+
+a[aria-expanded=false] .fa-angle-down {
+    display: none;
+}
