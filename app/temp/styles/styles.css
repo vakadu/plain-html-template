@@ -14984,6 +14984,12 @@ textarea:-ms-input-placeholder {
         line-height: 8px;
     }
 
+.btn--xs{
+        padding: 2px 10px;
+        font-size: 12px;
+        vertical-align: text-bottom;
+    }
+
 .btn--flat-line{
         border-radius: 0;
         -webkit-transition: all 0.8s ease 0s;
@@ -15028,8 +15034,20 @@ textarea:-ms-input-placeholder {
 .btn--orange:hover,
     .btn--orange:focus,
     .btn--orange:active{
-        background-color: #ae1c26;
-        color: #FFFFFF;
+         background-color: #ae1c26;
+         color: #FFFFFF;
+    }
+
+.btn--green{
+         background-color: #82b21c;
+         border-color: #82b21c;
+    }
+
+.btn--green:hover,
+    .btn--green:focus,
+    .btn--green:active{
+         background-color: #82b21c;
+         color: #FFFFFF;
     }
 
 /* ==========================
@@ -15602,3 +15620,98 @@ textarea:-ms-input-placeholder {
 /* ==========================
 *   MENU
 ============================*/
+
+.profile__restaurant{
+    background: url("http://placehold.it/1670x480");
+    /*background: url("/assets/images/restaurants.png");*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile__restaurant-img__wrap{
+        border-radius: 2px;
+        padding: 2px;
+        float: left;
+        background: #FFFFFF;
+    }
+
+@media (min-width: 530px) {
+
+.profile__restaurant-img__wrap{
+            padding: 5px
+    }
+    }
+
+.profile__restaurant-img__wrap figure{
+            background: #FFFFFF;
+            border-radius: 2px;
+            display: block;
+            overflow: hidden;
+            float: left;
+        }
+
+.profile__restaurant-img__wrap figure img{
+                width: auto;
+                display: block;
+            }
+
+@media (min-width: 530px) {
+
+.profile__restaurant-img__wrap figure img{
+                    max-width: 100%
+            }
+    }
+
+.profile__restaurant__right-text{
+        width: 100%;
+        border-right: 0;
+        margin-top: 5px;
+    }
+
+@media (min-width: 530px) {
+
+.profile__restaurant__right-text{
+            margin-top: 30px
+    }
+    }
+
+.profile__restaurant-desc h6{
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+@media (min-width: 530px) {
+
+.profile__restaurant-desc h6{
+                margin-right: 60px
+        }
+    }
+
+.profile__restaurant-desc h6 a{
+                font-size: 26px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+
+.profile__restaurant-desc p{
+            color: #FFFFFF;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+
+.profile__restaurant .nav-inline .nav-item{
+        display: inline-block;
+    }
+
+.profile__restaurant .nav-item a{
+        color: #FFFFFF;
+        font-size: 13px;
+        padding-left: 0;
+    }
+
+.profile__restaurant .nav-item.ratings a span i{
+        color: #CB212C;
+        font-size: 13px;
+    }

@@ -1,4 +1,87 @@
 /* ==========================
 *   MENU
 ============================*/
+.profile__restaurant{
+    background: url("http://placehold.it/1670x480");
+    /*background: url("/assets/images/restaurants.png");*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    &-img__wrap{
+        border-radius: 2px;
+        padding: 2px;
+        float: left;
+        background: $white;
+
+        @mixin atSmall{
+            padding: 5px;
+        }
+
+        figure{
+            background: $white;
+            border-radius: 2px;
+            display: block;
+            overflow: hidden;
+            float: left;
+
+            img{
+                width: auto;
+                display: block;
+
+                @mixin atSmall{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    &__right-text{
+        width: 100%;
+        border-right: 0;
+        margin-top: 5px;
+
+        @mixin atSmall{
+            margin-top: 30px;
+        }
+    }
+
+    &-desc{
+        h6{
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            @mixin atSmall{
+                margin-right: 60px;
+            }
+
+            a{
+                font-size: 26px;
+                line-height: 26px;
+                color: $white;
+            }
+        }
+
+        p{
+            color: $white;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    }
+
+    .nav-inline .nav-item{
+        display: inline-block;
+    }
+
+    .nav-item a{
+        color: $white;
+        font-size: 13px;
+        padding-left: 0;
+    }
+
+    .nav-item.ratings a span i{
+        color: $orange;
+        font-size: 13px;
+    }
+}
