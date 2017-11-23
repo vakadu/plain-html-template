@@ -10342,6 +10342,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 new _wowjs2.default.WOW().init();
 
+(0, _jquery2.default)(".bg-image").css("background", function () {
+  var a = "url(" + (0, _jquery2.default)(this).data("image-src") + ") no-repeat center center";return a;
+}), (0, _jquery2.default)(".bg-image").css("background-size", "cover");
+
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {

@@ -14936,6 +14936,10 @@ textarea:-ms-input-placeholder {
     font-weight: 300;
 }
 
+/* ==========================
+*   BUTTONS
+============================*/
+
 .btn{
     background-color: none;
     border-color: rgba(0, 0, 0, 0.1);
@@ -15137,6 +15141,32 @@ textarea:-ms-input-placeholder {
             -webkit-transition: all .5s;
             transition: all .5s;
         }
+
+/* ==========================
+*   PAGINATION
+============================*/
+
+.page-item.disabled .page-link,
+.page-item.disabled .page-link:focus,
+.page-item.disabled .page-link:hover {
+    border-color: #eaebeb;
+}
+
+.page-link {
+    color: #414551 !important;
+    background-color: #FFFFFF;
+    border: 1px solid #eaebeb !important;
+    font-size: 12px;
+    padding: 8px 15px !important;
+}
+
+.page-item.active .page-link,
+.page-item.active .page-link:focus,
+.page-item.active .page-link:hover {
+    background-color: #CB212C;
+    border-color: #CB212C;
+    color: #FFFFFF !important;
+}
 
 /* ==========================
 *   HERO IMAGE
@@ -15837,3 +15867,122 @@ a[aria-expanded=true] .fa-angle-up {
 a[aria-expanded=false] .fa-angle-down {
     display: none;
 }
+
+/* ==========================
+*   SEARCH
+============================*/
+
+.search--bg-image{
+    background: url("http://placehold.it/1670x480");
+    /*background: url("/assets/images/restaurants.png");*/
+    /*background-attachment: fixed;*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search--food-item__wrap{
+        border: 1px solid #eaebeb;
+         border-radius: 2px;
+         overflow: hidden;
+         margin-bottom: 30px;
+         background: #fafaf8;
+    }
+
+.search--food-item__figure-wrap{
+        position: relative;
+        height: 210px;
+    }
+
+.search--food-item__figure-wrap:after{
+             position: absolute;
+             bottom: -1px;
+             left: 0;
+             content: "";
+             background: url("/assets/images/zig-zag.png");
+             width: 100%;
+             height: 5px;
+        }
+
+.search--food-item__rating{
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+    }
+
+.search--food-item__rating i{
+            color: #CB212C;
+            font-size: 16px;
+        }
+
+.search--food-item__review{
+         position: absolute;
+         bottom: 32px;
+         right: 30px;
+         margin-top: 5px;
+         font-size: 11px;
+    }
+
+.search--food-item__review a{
+            color: #FFFFFF;
+        }
+
+.search--food-item__content{
+         padding: 10px 15px;
+    }
+
+.search--food-item__non-veg{
+         max-width: 20px;
+         height: auto;
+         margin-top: 2px;
+         margin-right: 5px;
+         display: block;
+    }
+
+.search--food-item__non-veg img{
+            max-width: 100%;
+            display: block;
+        }
+
+.search--food-item__name{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+.search--food-item__price .price{
+            font-size: 15px;
+            color: #414551;
+            margin-top: 4px;
+            display: inline-block;
+        }
+
+.search--food-item__restaurant{
+         border-top: 1px solid #eaebeb;
+         float: left;
+         width: 100%;
+    }
+
+.search--food-item__restaurant .left{
+            padding: 8px 15px;
+        }
+
+.search--food-item__restaurant .left img{
+                padding-top: 3px;
+            }
+
+.search--food-item__restaurant-right{
+        margin-left: 10px;
+    }
+
+.search--food-item__restaurant-right a{
+            display: block;
+            color: #414551;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+.search--food-item__restaurant-right span{
+            color: #979797;
+            font-size: 13px;
+            font-weight: 300;
+        }

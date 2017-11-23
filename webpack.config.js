@@ -1,5 +1,5 @@
 //webpack package is used for converting es6 into es5
-var webpack = require('webpack');
+// var webpack = require('webpack');
 module.exports = {
     entry: {
         App: __dirname + "/app/assets/scripts/App.js",
@@ -21,4 +21,14 @@ module.exports = {
             }
         ]
     }
+    // plugins: [
+    //     new webpack.ProvidePlugin({
+    //         $: 'jquery',
+    //         jQuery: 'jquery',
+    //         'window.jQuery': 'jquery',
+    //         tether: 'tether',
+    //         Tether: 'tether',
+    //         'window.Tether': 'tether',
+    //     })
+    // ]
 };
