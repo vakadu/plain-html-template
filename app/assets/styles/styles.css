@@ -36,6 +36,8 @@ Version:      3.0.0
 @import "modules/_social.css";
 @import "modules/_pagination.css";
 @import "modules/_hero-bg.css";
+@import "modules/_header.css";
+@import "modules/_primary-nav.css";
 @import "modules/_home.css";
 @import "modules/_download.css";
 @import "modules/_playstorebtn.css";

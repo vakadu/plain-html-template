@@ -10338,6 +10338,10 @@ var _wowjs = __webpack_require__(2);
 
 var _wowjs2 = _interopRequireDefault(_wowjs);
 
+var _MobileMenu = __webpack_require__(3);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 new _wowjs2.default.WOW().init();
@@ -10345,6 +10349,8 @@ new _wowjs2.default.WOW().init();
 (0, _jquery2.default)(".bg-image").css("background", function () {
   var a = "url(" + (0, _jquery2.default)(this).data("image-src") + ") no-repeat center center";return a;
 }), (0, _jquery2.default)(".bg-image").css("background-size", "cover");
+
+var mobileMenu = new _MobileMenu2.default();
 
 /***/ }),
 /* 2 */
@@ -10864,6 +10870,67 @@ new _wowjs2.default.WOW().init();
 
 }).call(this);
 
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MobileMenu = function () {
+    function MobileMenu() {
+        _classCallCheck(this, MobileMenu);
+
+        // alert("Hello");
+        this.siteHeader = (0, _jquery2.default)(".site-header");
+        this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
+        this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
+        this.menuLogo = (0, _jquery2.default)(".site-header__logo");
+        this.events();
+    } //calling all the functions in constructor
+
+    _createClass(MobileMenu, [{
+        key: "events",
+        value: function events() {
+            this.menuIcon.click(this.toggleTheMenu.bind(this));
+            this.menuIcon.click(this.toggleTheLogo.bind(this));
+        } //calling the methods when clicking on hamburger icon
+
+    }, {
+        key: "toggleTheMenu",
+        value: function toggleTheMenu() {
+            // console.log("Toggle");
+            this.menuContent.toggleClass("site-header__menu-content--is-visible");
+            this.siteHeader.toggleClass("site-header--is-expanded");
+        } //hiding and showing menu for mobile screens
+
+    }, {
+        key: "toggleTheLogo",
+        value: function toggleTheLogo() {
+            this.menuLogo.toggleClass("site-header__logo--is-visible");
+        } //hiding logo when hamburger is clicked
+
+    }]);
+
+    return MobileMenu;
+}();
+
+exports.default = MobileMenu;
 
 /***/ })
 /******/ ]);
