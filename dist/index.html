@@ -17,18 +17,37 @@
     <link href="https://fonts.googleapis.com/css?family=Spectral+SC:400,500,700" rel="stylesheet">
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="assets/styles/styles-7ed7c9c16b.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-97e6d5738a.css"/>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--Plugins JS -->
-    <script src="assets/scripts/Vendor-823d69f5f9.js"></script>
+    <script src="assets/scripts/Vendor-aad96694ba.js"></script>
 </head>
 
 <body>
 
 <!--Navigation-->
-<header class="header">
-
-</header><!--end navigation-->
+<header class="site-header">
+    <div class="container">
+        <div class="site-header__logo">
+            <img src="assets/images/KP_Logo_100x100.png">
+        </div>
+        <div class="site-header__menu-icon">
+            <div class="site-header__menu-icon__middle"></div>
+        </div>
+        <div class="site-header__menu-content">
+            <nav class="primary-nav primary-nav--pull-right">
+                <ul>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="menu.html">Menus</a></li>
+                    <li><a href="">Events</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
+        </div>
+    </div>
+</header>
 
 <!--Hero Section-->
 <section id="section-home" class="home">
@@ -114,14 +133,14 @@
 <!--</section>-->
 
 <!--Download Section-->
-<section id="section-download" class="download">
+<section id="section-download" class="download lazyload">
     <div class="download__app">
         <div class="container">
             <div class="row">
                 <div class="container">
                     <div class="col-xs-12 col-md-5 download__kwiqpick-right--image">
                         <figure>
-                            <img src="assets/images/kwqipick-app.png" alt="Kwiqpick App"  height="339">
+                            <img data-src="assets/images/kwqipick-app.png" alt="Kwiqpick App"  height="339" class="lazyload">
                         </figure><!--end kwiqpick image-->
                     </div><!--end image on right-->
                     <div class="col-xs-12 col-md-7 download__kwiqpick-left--text">
@@ -141,14 +160,14 @@
 </section><!--end download section-->
 
 <!--Footer-->
-<footer class="footer">
+<footer class="footer lazyload">
     <div class="container">
 
         <!--Footer top Starts-->
         <div class="row footer__top">
             <div class="col-xs-12 col-md-3 footer__logo">
                 <a href="#">
-                    <img src="assets/images/kp_logo.jpg" alt="Kwiqpick" class="img-responsive">
+                    <img data-src="assets/images/kp_logo.jpg" alt="Kwiqpick" class="img-responsive lazyload">
                 </a>
                 <span>YOUR DIGITAL WAITER</span>
             </div><!--end footer logo-->
@@ -204,6 +223,12 @@
     </div><!--end container-->
 </footer><!--end footer-->
 
-<script src="assets/scripts/App-5b63c6d98d.js"></script>
+<script src="assets/scripts/App-7943b76387.js"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>

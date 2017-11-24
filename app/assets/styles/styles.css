@@ -25,7 +25,6 @@ Version:      3.0.0
 --------------------------------------------------------------*/
 
 @import "bootstrap";
-@import "font-awesome";
 @import "animate.css";
 @import "base/_variables.css";
 @import "base/_mixins.css";

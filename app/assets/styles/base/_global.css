@@ -122,6 +122,14 @@ hr{
     background: $white;
 }
 
+.wrapper {
+    padding-top: 0;
+
+    @mixin atMedium{
+        padding-top: 61px;
+    }
+}
+
 /* ==========================
 *   SPACINGS
 ============================*/

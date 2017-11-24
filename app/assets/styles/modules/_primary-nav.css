@@ -9,16 +9,24 @@
 
     ul{
         margin: 0;
-        padding: 0;
+        padding: 100px 0;
+
+        @mixin atMedium{
+            padding: 0;
+        }
     }
 
     li{
         list-style: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
         display: block;
-        padding-right: 20px;
 
         @mixin atMedium{
             float: left;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 20px;
         }
     }
 
@@ -29,8 +37,12 @@
     a{
         color: $white;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 25px;
         font-weight: 300;
         padding: 12px;
+
+        @mixin atMedium{
+            font-size: 14px;
+        }
     }
 }
