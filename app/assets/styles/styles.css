@@ -45,3 +45,6 @@ Version:      3.0.0
 @import "modules/_restaurants.css";
 @import "modules/_menu.css";
 @import "modules/_search-results.css";
+@import "modules/_widget.css";
+@import "modules/_contact.css";
+@import "modules/_panel.css";
