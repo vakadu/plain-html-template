@@ -1,1 +1,1 @@
-# Tomato-HTML-Template
+# plain-html-template
