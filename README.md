@@ -1,2 +1,1 @@
-KWIQPICK
-# Website-v3.0
+# Tomato-HTML-Template
